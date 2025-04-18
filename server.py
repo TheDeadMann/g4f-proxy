@@ -2,13 +2,14 @@ import os
 from g4f.client import Client
 from flask import Flask, jsonify, request
 from dotenv import load_dotenv
+from flask_cors import CORS
 
 load_dotenv()
-
 app = Flask(__name__)
 client = Client()
 
 port = int(os.getenv("PORT", 3001))
+CORS(app)
 
 @app.route('/', methods=['GET'])
 def getMain():
