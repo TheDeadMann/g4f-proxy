@@ -2,6 +2,7 @@
 
 1. Clone the repository.
 2. Run `pip install -r requirements.txt`.
+3. Make a .env file from .env.example with your values.
 3. Start the backend server with:
 
    ```bash
